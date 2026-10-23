@@ -2,7 +2,11 @@
 
 Project: `C:\laragon\www\xenbar-website`.
 
-The landing page is implemented with React and React Native Web (`View`, `Text`, `Image`, `Pressable`, `StyleSheet`, `useWindowDimensions`). Vite serves and builds the browser application. Native browser elements handle navigation links, video playback and disclosure panels. This project targets the web; it is not an Android/iOS application scaffold.
+The landing page uses React, a React Native Web page shell, and responsive browser elements styled with CSS. Vite serves and builds the browser application. This project targets the web; it is not an Android/iOS application scaffold.
+
+The design takes inspiration from the Nusa reference supplied by the user: near-black surfaces, bold centered typography, restrained blue/violet glows, a prominent interactive preview, and feature grids. All branding, release details and product copy are specific to XenBar.
+
+The preview includes nine selectable states: Resting, Closed, Music, Focus timer, Water, Shelf, To-do, Calendar and Quick actions. The supplied 23 October 2026 screenshots define the notch silhouette, status bar, cross-shaped eyes and widget layouts. Three selectable desktop backdrops and a screenshot-based dock surface preserve the captured appearance. The dock has interactive hotspots that select related previews; the focus timer counts down, task checkboxes update their completion count, water intake responds to the selected drink size, and the file shelf accepts a sample item. Screenshot, audio output and notes shortcuts explain their app-only behavior rather than accessing the computer. All eleven newly supplied captures are also available unchanged in the gallery, alongside the earlier workspace image. These are browser demonstrations, not access to local Windows apps or files. Automatic cycling can be paused and respects reduced-motion preferences. No video or audio is embedded.
 
 ## Run
 
@@ -25,7 +29,7 @@ Preview the production build at http://127.0.0.1:4174. Publish only `dist/` to y
 
 ## Branding
 
-The supplied wolf artwork is copied unchanged to `public/assets/xenbar-logo.png`. It is used for the header, download section, footer, browser favicon, touch icon and configured social image. Historical product screenshots and video retain their recorded app branding. No desktop-app source, icon, executable or user profile was modified.
+The supplied wolf artwork is copied unchanged to `public/assets/xenbar-logo.png`. It is used for the header, download section, footer, browser favicon, touch icon and configured social image. Historical product screenshots retain their recorded app branding. The showcase uses a React/CSS animation, with clickable dock regions, an expanding music notch, widget demos and playback controls. It respects reduced-motion preferences and plays no audio. The former recording and poster are archived locally in ignored `reference-media/`, outside the published assets. No desktop-app source, icon, executable or user profile was modified.
 
 ## Release and hosting configuration
 
